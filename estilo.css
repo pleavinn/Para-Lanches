@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #5c0101;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho (topo) */
+#topo {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+}
+#topo img:first-child {
+    margin-right: auto; /* Empurra a imagem para o canto esquerdo */
+}
+
+
+button {
+    background-color: #8a0707;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 20%;
+
+}
+
+
+button:hover {
+    background-color: #ff0000;
+}
+
+#topo img {
+    margin-top: 20px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito hover na imagem */
+#topo img:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem no hover */
+}
+
+/* Reposicionamento da imagem no hover */
+#topo img.repositioned {
+    margin-top: 40px; /* Ajuste a margem conforme necessário */
+}
+
+#conteudo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background: #5c0101;
+    color: #fff;
+}
+
+/* Estilo para a imagem */
+#conteudo img {
+    border-radius: 30px; /* Arredondamento da borda */
+}
+
+/* Estilo para o texto à direita da imagem */
+#conteudo p {
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    flex-grow: 1; /* Permite que o texto cresça para ocupar o espaço restante */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte da letra */
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: auto;
+    background: #000;
+    color: #ffffff;
+    
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+}
+.anterior, .proximo {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    background: #ff0000;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+.carrossel img {
+    width: 700px; /* Ajuste conforme necessário */
+    height: 400px;
+}
+
